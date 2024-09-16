@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lock 'n' Load: Password Power-Up!</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=Roboto:ital@0;1&display=swap" rel="stylesheet');
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lock 'n' Load:<br>Password Power-Up!</h1>
+        <p>Strengthen your digital world with just one click! Generate unique, ultra-secure passwords instantly, and say
+            goodbye to intruders - fast, simple, and foolproof!</p>
+
+        <div class="password-generator">
+            <button id="generateBtn">
+                <span id="password">Generated Password</span>
+                <span class="reload-symbol"><i class="fa-solid fa-arrows-rotate"></i></span>
+            </button>
+        </div>
+        <div class="mini-btns">
+            <button id="copyBtn"><i class="fa-solid fa-copy"></i></button>
+            <button id="clearBtn"><i class="fa-solid fa-trash"></i></button>
+        </div>
+
+
+
+        <div class="password-options">
+            <label for="length">Length</label>
+            <input type="range" id="length" name="length" min="8" max="40" value="16">
+            <div class="checkbox-group">
+                <label><input type="checkbox" id="uppercase"> Uppercase</label>
+                <label><input type="checkbox" id="lowercase" checked> Lowercase</label>
+                <label><input type="checkbox" id="numbers"> Numbers</label>
+                <label><input type="checkbox" id="specialChars"> Special Characters</label>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
